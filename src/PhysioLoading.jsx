@@ -599,7 +599,7 @@ const PhysioLanding = () => {
 
       {/* Lightbox */}
       {lightboxOpen && (
-        <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 backdrop-blur-md animate-[fadeIn_0.3s_ease-out]">
+        <div className="fixed inset-0 z-100 bg-black/95 flex items-center justify-center p-4 backdrop-blur-md animate-[fadeIn_0.3s_ease-out]">
           <button 
             onClick={() => setLightboxOpen(false)} 
             className="absolute top-6 right-6 text-white/50 hover:text-white transition p-2"
