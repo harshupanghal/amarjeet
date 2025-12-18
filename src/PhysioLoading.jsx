@@ -213,7 +213,7 @@ const PhysioLanding = () => {
           
           {/* Main Hero Card */}
           <Reveal>
-            <div className="relative h-[600px] md:h-[700px] w-full rounded-[2rem] overflow-hidden shadow-2xl group bg-slate-900">
+            <div className="relative h-150 md:h-175 w-full rounded-4xl overflow-hidden shadow-2xl group bg-slate-900">
               {/* Background IMAGE (Replaced Video) */}
               <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
                 <img 
@@ -222,7 +222,7 @@ const PhysioLanding = () => {
                   className="absolute min-w-full min-h-full w-auto h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover opacity-90 transition-transform duration-[10s] hover:scale-105"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-[#0f172a]/50 to-transparent/10"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-[#0f172a]/90 via-[#0f172a]/50 to-transparent/10"></div>
               </div>
 
 
@@ -241,7 +241,7 @@ const PhysioLanding = () => {
                   {/* Headline */}
                   <h1 className="text-4xl md:text-7xl font-serif font-bold text-white leading-[1.1] mb-6 md:mb-8 drop-shadow-lg">
                     Movement is <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d1fae5] to-emerald-200">Medicine.</span>
+                    <span className="text-transparent bg-clip-text bg-linear-to-r from-[#d1fae5] to-emerald-200">Medicine.</span>
                   </h1>
                   
                   <p className="text-base md:text-xl text-slate-200 mb-8 md:mb-10 max-w-lg font-light leading-relaxed opacity-90">
@@ -512,7 +512,7 @@ const PhysioLanding = () => {
 
             {/* Video Testimonial Card - YOUTUBE FACADE */}
             <Reveal delay={100}>
-              <div className="relative h-[400px] rounded-[2rem] overflow-hidden shadow-lg">
+              <div className="relative h-100 rounded-4xl overflow-hidden shadow-lg">
                 <YouTubeFacade 
                    videoId="yG7_1c6Z1b4" 
                    poster="https://images.unsplash.com/photo-1544367563-1219a0b6d319?auto=format&fit=crop&q=80"
@@ -524,7 +524,7 @@ const PhysioLanding = () => {
 
              {/* Text Review Card 2 */}
              <Reveal delay={200}>
-                <div className="bg-white p-8 rounded-[2rem] shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] relative h-full">
+                <div className="bg-white p-8 rounded-4xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] relative h-full">
                   <svg className="w-10 h-10 text-[#d97706]/20 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.896 14.321 15.923 14.929 15.081C15.537 14.239 16.413 13.565 17.557 13.059C17.071 13.551 16.513 14.28 15.883 15.245C15.253 16.21 14.938 17.275 14.938 18.44L14.938 21H14.017ZM8.017 21L8.017 18C8.017 16.896 8.321 15.923 8.929 15.081C9.537 14.239 10.413 13.565 11.557 13.059C11.071 13.551 10.513 14.28 9.883 15.245C9.253 16.21 8.938 17.275 8.938 18.44L8.938 21H8.017ZM6 9H10V13H6V9ZM14 9H18V13H14V9Z"/></svg>
                   <p className="text-slate-600 italic mb-6 leading-relaxed">"The clinic is beautiful and the staff is amazing. No waiting times, professional service, and finally I can run pain-free again."</p>
                   <div className="flex items-center gap-3">
@@ -543,7 +543,7 @@ const PhysioLanding = () => {
 
       {/* 7. FLOATING CONTACT */}
       <section id="contact" className="py-24 bg-[#0f172a] text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#047857] rounded-full mix-blend-screen filter blur-[120px] opacity-20"></div>
+        <div className="absolute top-0 right-0 w-125 h-125 bg-[#047857] rounded-full mix-blend-screen filter blur-[120px] opacity-20"></div>
 
 
         <div className="container mx-auto px-6 relative z-10">
@@ -558,7 +558,7 @@ const PhysioLanding = () => {
                        <div className="w-14 h-14 rounded-full bg-[#047857] flex items-center justify-center text-white shadow-[0_0_25px_-5px_rgba(4,120,87,0.25)]">
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                       </div>
-                      <div className="text-2xl font-serif font-bold">+91 9992526066</div>
+                      <div className="text-2xl font-serif font-bold">+91 999 252 6066</div>
                   </div>
                 </div>
               </Reveal>
