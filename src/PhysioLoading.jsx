@@ -152,7 +152,7 @@ const PhysioLanding = () => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <span className="hidden md:inline">Accepting New Patients • No Waiting List</span>
           <span className="md:hidden">Same Day Appts Available</span>
-          <a href="tel:+15551234567" className="flex items-center gap-1 hover:text-[#d97706] transition">
+          <a href="tel:+919992526066" className="flex items-center gap-1 hover:text-[#d97706] transition">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"/></svg>
             +1 (555) 123-4567
           </a>
@@ -319,7 +319,7 @@ const PhysioLanding = () => {
               <Reveal>
                 <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-[#d97706]/10 rounded-full mix-blend-multiply filter blur-2xl"></div>
                 <img src="/sonu.jpg" loading="lazy" alt="Dr. Amarjeet Panghal"
-                     className="rounded-[2rem] shadow-xl relative z-10 w-full object-cover h-[400px] md:h-[600px] grayscale hover:grayscale-0 transition duration-700" />
+                     className="rounded-4xl shadow-xl relative z-10 w-full object-cover h-100 md:h-150 grayscale hover:grayscale-0 transition duration-700" />
               </Reveal>
             </div>
 
@@ -374,7 +374,7 @@ const PhysioLanding = () => {
 
       {/* 4. SERVICES SECTION (Bento Grid) */}
       <section id="services" className="py-24 bg-[#fcfbf9] relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
+        <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-slate-200 to-transparent"></div>
         
         <div className="container mx-auto px-6">
           <Reveal>
@@ -389,8 +389,8 @@ const PhysioLanding = () => {
             
             {/* Service 1 */}
             <Reveal>
-              <div className="group bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 <div className="w-14 h-14 bg-[#d1fae5] text-[#047857] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                 </div>
@@ -402,8 +402,8 @@ const PhysioLanding = () => {
 
             {/* Service 2 */}
             <Reveal delay={100}>
-              <div className="group bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                 </div>
@@ -415,8 +415,8 @@ const PhysioLanding = () => {
 
             {/* Service 3 */}
             <Reveal delay={200}>
-              <div className="group bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 <div className="w-14 h-14 bg-[#d1fae5] text-[#047857] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
@@ -440,7 +440,7 @@ const PhysioLanding = () => {
           </Reveal>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px] md:h-[600px]">
+          <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-200 md:h-150">
             
             {/* Large Video Thumbnail - YOUTUBE FACADE */}
             <div className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden shadow-lg border border-slate-100">
@@ -496,7 +496,7 @@ const PhysioLanding = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Text Review Card */}
             <Reveal>
-              <div className="bg-white p-8 rounded-[2rem] shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] relative h-full">
+              <div className="bg-white p-8 rounded-4xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] relative h-full">
                 <svg className="w-10 h-10 text-[#d97706]/20 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.896 14.321 15.923 14.929 15.081C15.537 14.239 16.413 13.565 17.557 13.059C17.071 13.551 16.513 14.28 15.883 15.245C15.253 16.21 14.938 17.275 14.938 18.44L14.938 21H14.017ZM8.017 21L8.017 18C8.017 16.896 8.321 15.923 8.929 15.081C9.537 14.239 10.413 13.565 11.557 13.059C11.071 13.551 10.513 14.28 9.883 15.245C9.253 16.21 8.938 17.275 8.938 18.44L8.938 21H8.017ZM6 9H10V13H6V9ZM14 9H18V13H14V9Z"/></svg>
                 <p className="text-slate-600 italic mb-6 leading-relaxed">"After 3 months of shoulder pain, Dr. Amarjeet Panghal identified the root cause in one session. The recovery plan was easy to follow and incredibly effective."</p>
                 <div className="flex items-center gap-3">
@@ -558,7 +558,7 @@ const PhysioLanding = () => {
                        <div className="w-14 h-14 rounded-full bg-[#047857] flex items-center justify-center text-white shadow-[0_0_25px_-5px_rgba(4,120,87,0.25)]">
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                       </div>
-                      <div className="text-2xl font-serif font-bold">+1 (555) 123-4567</div>
+                      <div className="text-2xl font-serif font-bold">+91 9992526066</div>
                   </div>
                 </div>
               </Reveal>
