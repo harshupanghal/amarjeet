@@ -322,7 +322,7 @@ const PhysioLanding = () => {
             <div className="w-full lg:w-1/2 relative">
               <Reveal>
                 <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-[#d97706]/10 rounded-full mix-blend-multiply filter blur-2xl"></div>
-                <img src="/sonu.jpg" loading="lazy" alt="Dr. Amarjeet Panghal"
+                <img src="/sonu.jpeg" loading="lazy" alt="Dr. Amarjeet Panghal"
                      className="rounded-4xl shadow-xl relative z-10 w-full object-cover h-100 md:h-150 grayscale hover:grayscale-0 transition duration-700" />
               </Reveal>
             </div>
@@ -354,7 +354,7 @@ const PhysioLanding = () => {
                   </div>
                   <div className="text-center md:text-left">
                     <div className="text-3xl md:text-4xl font-serif font-bold text-[#0f172a] mb-1 flex items-center justify-center md:justify-start">
-                      <Counter end={1000} />+
+                      <Counter end={1500} />+
                     </div>
                     <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Recoveries</div>
                   </div>
