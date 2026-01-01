@@ -1,0 +1,87 @@
+  <section id="stories" className="py-24 bg-[#fcfbf9] relative">
+        <div className="container mx-auto px-6">
+          <Reveal>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                Patient <span className="text-[#d97706]">Stories</span>
+              </h2>
+              <p className="text-slate-500">Real recovery journeys.</p>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Text Review Card */}
+            <Reveal>
+              <div className="bg-white p-8 rounded-4xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] relative h-full">
+                <svg
+                  className="w-10 h-10 text-[#d97706]/20 mb-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M14.017 21L14.017 18C14.017 16.896 14.321 15.923 14.929 15.081C15.537 14.239 16.413 13.565 17.557 13.059C17.071 13.551 16.513 14.28 15.883 15.245C15.253 16.21 14.938 17.275 14.938 18.44L14.938 21H14.017ZM8.017 21L8.017 18C8.017 16.896 8.321 15.923 8.929 15.081C9.537 14.239 10.413 13.565 11.557 13.059C11.071 13.551 10.513 14.28 9.883 15.245C9.253 16.21 8.938 17.275 8.938 18.44L8.938 21H8.017ZM6 9H10V13H6V9ZM14 9H18V13H14V9Z" />
+                </svg>
+                <p className="text-slate-600 italic mb-6 leading-relaxed">
+                  "After 3 months of shoulder pain, Dr. Amarjeet Panghal
+                  identified the root cause in one session. The recovery plan
+                  was easy to follow and incredibly effective."
+                </p>
+                <div className="flex items-center gap-3">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Michael R."
+                    className="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <div className="font-bold text-slate-900 text-sm">
+                      Michael R.
+                    </div>
+                    <div className="text-[#d97706] text-xs">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* Video Testimonial Card - YOUTUBE FACADE */}
+            <Reveal delay={100}>
+              <div className="relative h-100 rounded-4xl overflow-hidden shadow-lg">
+                <YouTubeFacade
+                  videoId="yG7_1c6Z1b4"
+                  poster="https://images.unsplash.com/photo-1544367563-1219a0b6d319?auto=format&fit=crop&q=80"
+                  title="Sarah's ACL Journey"
+                />
+              </div>
+            </Reveal>
+
+            {/* Text Review Card 2 */}
+            <Reveal delay={200}>
+              <div className="bg-white p-8 rounded-4xl shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] relative h-full">
+                <svg
+                  className="w-10 h-10 text-[#d97706]/20 mb-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M14.017 21L14.017 18C14.017 16.896 14.321 15.923 14.929 15.081C15.537 14.239 16.413 13.565 17.557 13.059C17.071 13.551 16.513 14.28 15.883 15.245C15.253 16.21 14.938 17.275 14.938 18.44L14.938 21H14.017ZM8.017 21L8.017 18C8.017 16.896 8.321 15.923 8.929 15.081C9.537 14.239 10.413 13.565 11.557 13.059C11.071 13.551 10.513 14.28 9.883 15.245C9.253 16.21 8.938 17.275 8.938 18.44L8.938 21H8.017ZM6 9H10V13H6V9ZM14 9H18V13H14V9Z" />
+                </svg>
+                <p className="text-slate-600 italic mb-6 leading-relaxed">
+                  "The clinic is beautiful and the staff is amazing. No waiting
+                  times, professional service, and finally I can run pain-free
+                  again."
+                </p>
+                <div className="flex items-center gap-3">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Emma W."
+                    className="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <div className="font-bold text-slate-900 text-sm">
+                      Emma W.
+                    </div>
+                    <div className="text-[#d97706] text-xs">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
