@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Brain, Hand, Activity, ShieldPlus, Sparkles, HeartPulse } from "lucide-react";
 
 // --- CUSTOM HOOKS & UTILS ---
 
@@ -452,7 +453,7 @@ const PhysioLanding = () => {
               <Reveal>
                 <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-[#d97706]/10 rounded-full mix-blend-multiply filter blur-2xl"></div>
                 <img
-                  src="/sonu.jpeg"
+                  src="/sonu.png"
                   loading="lazy"
                   alt="Dr. Amarjeet Panghal"
                   className="rounded-4xl shadow-xl relative z-10 w-full object-cover h-100 md:h-150 grayscale hover:grayscale-0 transition duration-700"
@@ -539,202 +540,142 @@ const PhysioLanding = () => {
       </section>
 
       {/* 4. SERVICES SECTION (Bento Grid) */}
-      <section id="services" className="py-24 bg-[#fcfbf9] relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-slate-200 to-transparent"></div>
+    <section id="services" className="py-24 bg-[#fcfbf9] relative">
+  <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-slate-200 to-transparent"></div>
 
-        <div className="container mx-auto px-6">
-          <Reveal>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-[#047857] font-bold uppercase tracking-widest text-xs bg-[#d1fae5]/50 px-3 py-1 rounded-full">
-                Our Expertise
-              </span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
-                Clinical Precision. <br />
-                Holistic Care.
-              </h2>
-            </div>
-          </Reveal>
+  <div className="container mx-auto px-6">
+    <Reveal>
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <span className="text-[#047857] font-bold uppercase tracking-widest text-xs bg-[#d1fae5]/50 px-3 py-1 rounded-full">
+          Our Expertise
+        </span>
+        <h2 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6">
+          Clinical Precision. <br />
+          Holistic Care.
+        </h2>
+      </div>
+    </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Service 1 */}
-            <Reveal>
-              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="w-14 h-14 bg-[#d1fae5] text-[#047857] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                  <svg
-                    className="w-7 h-7"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
-                  Cervical Expertise
-                </h3>
-                <p className="text-slate-500 mb-6 leading-relaxed text-sm">
-                  Applying advanced cervical techniques, we resolve complex
-                  nerve compression and structural misalignments to restore
-                  total neck mobility and neurological health.
-                </p>
-              </div>
-            </Reveal>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Cervical Expertise */}
+      <Reveal>
+        <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
 
-            {/* Service 2 */}
-            <Reveal delay={100}>
-              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                  <svg
-                    className="w-7 h-7"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
-                  Manual Therapy
-                </h3>
-                <p className="text-slate-500 mb-6 leading-relaxed text-sm">
-                  With skilled hands, we apply precise joint and soft-tissue
-                  techniques to dissolve muscle tension and restore your body’s
-                  natural range of motion.
-                </p>
-              </div>
-            </Reveal>
-
-            {/* Service 2 */}
-            <Reveal delay={100}>
-              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                  <svg
-                    className="w-7 h-7"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
-                  Senior Mobility Support
-                </h3>
-                <p className="text-slate-500 mb-6 leading-relaxed text-sm">
-                  Restoring Strength. Reclaiming Confidence. With expert
-                  guidance, we build physical stability and ease the fear of
-                  falling, returning you to a safe and independent life.
-                </p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={100}>
-              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                  <svg
-                    className="w-7 h-7"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
-                  Neuro Recovery{" "}
-                </h3>
-                <p className="text-slate-500 mb-6 leading-relaxed text-sm">
-                  Restoring Control. Through clinical mastery, we stimulate
-                  neurological pathways to improve motor function and help you
-                  reclaim command over your body.
-                </p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={100}>
-              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                  <svg
-                    className="w-7 h-7"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
-                  Acupressure Targeted Relief
-                </h3>
-                <p className="text-slate-500 mb-6 leading-relaxed text-sm">
-                  Applying precise pressure, we stimulate vital points to
-                  release deep-seated tension, alleviate pain, and restore your
-                  body’s natural energy flow.
-                </p>
-              </div>
-            </Reveal>
-
-            {/* Service 3 */}
-            <Reveal delay={200}>
-              <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="w-14 h-14 bg-[#d1fae5] text-[#047857] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                  <svg
-                    className="w-7 h-7"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    ></path>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
-                  Post-Surgery Recovery
-                </h3>
-                <p className="text-slate-500 mb-6 leading-relaxed text-sm">
-                  Our expert approach bridges the gap between surgery and daily
-                  life, ensuring a full and functional recovery.
-                </p>
-              </div>
-            </Reveal>
+          <div className="w-14 h-14 bg-[#d1fae5] text-[#047857] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <Activity className="w-7 h-7" strokeWidth={1.5} />
           </div>
+
+          <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
+            Cervical Expertise
+          </h3>
+          <p className="text-slate-500 leading-relaxed text-sm">
+            Applying advanced cervical techniques, we resolve complex nerve
+            compression and structural misalignments to restore total neck
+            mobility and neurological health.
+          </p>
         </div>
-      </section>
+      </Reveal>
+
+      {/* Manual Therapy */}
+      <Reveal delay={100}>
+        <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+
+          <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <Hand className="w-7 h-7" strokeWidth={1.5} />
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
+            Manual Therapy
+          </h3>
+          <p className="text-slate-500 leading-relaxed text-sm">
+            With skilled hands, we apply precise joint and soft-tissue techniques
+            to dissolve muscle tension and restore your body’s natural range of
+            motion.
+          </p>
+        </div>
+      </Reveal>
+
+      {/* Senior Mobility Support */}
+      <Reveal delay={100}>
+        <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+
+          <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <ShieldPlus className="w-7 h-7" strokeWidth={1.5} />
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
+            Senior Mobility Support
+          </h3>
+          <p className="text-slate-500 leading-relaxed text-sm">
+            Restoring strength and reclaiming confidence through expert guidance,
+            improving stability and independence in daily life.
+          </p>
+        </div>
+      </Reveal>
+
+      {/* Neuro Recovery */}
+      <Reveal delay={100}>
+        <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+
+          <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <Brain className="w-7 h-7" strokeWidth={1.5} />
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
+            Neuro Recovery
+          </h3>
+          <p className="text-slate-500 leading-relaxed text-sm">
+            Through clinical mastery, we stimulate neurological pathways to
+            restore motor function and rebuild bodily control.
+          </p>
+        </div>
+      </Reveal>
+
+      {/* Acupressure Targeted Relief */}
+      <Reveal delay={100}>
+        <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+
+          <div className="w-14 h-14 bg-orange-100 text-[#d97706] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <Sparkles className="w-7 h-7" strokeWidth={1.5} />
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
+            Acupressure Targeted Relief
+          </h3>
+          <p className="text-slate-500 leading-relaxed text-sm">
+            Precise pressure techniques to release deep-seated tension, alleviate
+            pain, and restore natural energy flow.
+          </p>
+        </div>
+      </Reveal>
+
+      {/* Post-Surgery Recovery */}
+      <Reveal delay={200}>
+        <div className="group bg-white p-8 rounded-4xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 relative overflow-hidden h-full">
+          <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-[#047857] to-[#d97706] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+
+          <div className="w-14 h-14 bg-[#d1fae5] text-[#047857] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <HeartPulse className="w-7 h-7" strokeWidth={1.5} />
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#047857] transition">
+            Post-Surgery Recovery
+          </h3>
+          <p className="text-slate-500 leading-relaxed text-sm">
+            Bridging the gap between surgery and daily life with structured,
+            functional rehabilitation.
+          </p>
+        </div>
+      </Reveal>
+    </div>
+  </div>
+</section>
+
 
       {/* 5. INTERACTIVE GALLERY */}
      <section id="gallery" className="py-24 bg-white relative">
@@ -750,7 +691,7 @@ const PhysioLanding = () => {
       </div>
     </Reveal>
 
-    <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-5 h-[900px] md:h-[700px]">
+    <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-5 h-225 md:h-175">
 
       {/* Primary (Hero) */}
       <div
@@ -770,7 +711,7 @@ const PhysioLanding = () => {
         </Reveal>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent
+        <div className="absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent
           opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
 
